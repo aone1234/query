@@ -1,0 +1,113 @@
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$ vim Hello.java
+
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$ javac Hello.java
+
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$ cat Hello.java
+public class Hello {
+        public static void main(String[] args) {
+                System.out.println("Hello Git!");
+                System.out.println("what is Git?");
+                System.out.println("BitKepper DVCS");
+        }
+}
+
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$ javac.Hello.java
+bash: javac.Hello.java: command not found
+
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hello.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.class
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$ git add Hello.java
+
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hello.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.class
+
+
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$ git commit -m "added output BitKepper"
+[master b6d5ef1] added output BitKepper
+ 1 file changed, 1 insertion(+)
+
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.class
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$ git commit -m "added.gitignore
+> "
+[master e7825bc] added.gitignore
+ 1 file changed, 122 insertions(+)
+ create mode 100644 .gitignore
+
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$ git log
+commit e7825bcd6c4e75bf0fda2ce1b7f8ebe1c6788060 (HEAD -> master)
+Author: hmh1181 <hmh1181@gmail.com>
+Date:   Fri Dec 18 15:23:24 2020 +0900
+
+    added.gitignore
+
+commit b6d5ef1d5f2f56459c5c7347973cdec97964482c
+Author: hmh1181 <hmh1181@gmail.com>
+Date:   Fri Dec 18 15:07:10 2020 +0900
+
+    added output BitKepper
+
+commit e9b6a964241b88d73d9b4b47f37ed8401a2c0f89
+Author: hmh1181 <hmh1181@gmail.com>
+Date:   Fri Dec 11 13:52:53 2020 +0900
+
+    added output what is Git?
+
+commit 97820338b077ff839ae33127c12e9da454d10a3f
+Author: hmh1181 <hmh1181@gmail.com>
+Date:   Fri Dec 11 12:36:27 2020 +0900
+
+    create Hello.java
+
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+i@DESKTOP-1N8I20E MINGW64 ~/git_tutotial (master)
+$
+

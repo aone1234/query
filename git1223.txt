@@ -1,0 +1,258 @@
+C:\workspace-jsp\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\work\Catalina\localhost\Chap05_JSP-1\org\apache\jsp
+
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/git_tutotial (gumi2|MERGING)
+$ vim Hello.java
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/git_tutotial (gumi2|MERGING)
+$ git status
+On branch gumi2
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   .gitignore
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   Hello.java
+
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/git_tutotial (gumi2|MERGING)
+$ git add Hello.java
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/git_tutotial (gumi2|MERGING)
+$ git status
+On branch gumi2
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        new file:   .gitignore
+        modified:   Hello.java
+
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/git_tutotial (gumi2|MERGING)
+$ git commit -m "merging with master"
+[gumi2 a5fdca4] merging with master
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/git_tutotial (gumi2)
+$ git log --graph
+*   commit a5fdca432cc67cbfb2212b1312f4b1a489c1dbad (HEAD -> gumi2)
+|\  Merge: 8161128 e7825bc
+| | Author: hmh1181 <hmh1181@gmail.com>
+| | Date:   Wed Dec 23 11:21:02 2020 +0900
+| |
+| |     merging with master
+| |
+| * commit e7825bcd6c4e75bf0fda2ce1b7f8ebe1c6788060 (master)
+| | Author: hmh1181 <hmh1181@gmail.com>
+| | Date:   Fri Dec 18 15:23:24 2020 +0900
+| |
+| |     added.gitignore
+| |
+| * commit b6d5ef1d5f2f56459c5c7347973cdec97964482c
+| | Author: hmh1181 <hmh1181@gmail.com>
+| | Date:   Fri Dec 18 15:07:10 2020 +0900
+| |
+| |     added output BitKepper
+| |
+* | commit 81611281c495c319555cafb944706c3ade307a94
+|/  Author: hmh1181 <hmh1181@gmail.com>
+|   Date:   Fri Dec 18 14:57:19 2020 +0900
+|
+|       added output That's DVCS
+|
+* commit e9b6a964241b88d73d9b4b47f37ed8401a2c0f89
+| Author: hmh1181 <hmh1181@gmail.com>
+| Date:   Fri Dec 11 13:52:53 2020 +0900
+|
+|     added output what is Git?
+|
+* commit 97820338b077ff839ae33127c12e9da454d10a3f
+  Author: hmh1181 <hmh1181@gmail.com>
+  Date:   Fri Dec 11 12:36:27 2020 +0900
+
+      create Hello.java
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/git_tutotial (gumi2)
+$
+i@DESKTOP-1N8I20E MINGW64 /c/users/i
+$ mkdir GitHub_tutorial
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i
+$ cd GitHub_tutorial/
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial
+$ pwd
+/c/users/i/GitHub_tutorial
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial
+$ ls
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial
+$ ls -al
+total 12
+drwxr-xr-x 1 i 197121 0 Dec 23 12:15 ./
+drwxr-xr-x 1 i 197121 0 Dec 23 12:15 ../
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial
+$ git clone https://github.com/aone1234/GitStudy.git
+Cloning into 'GitStudy'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial
+$ ls -al
+total 12
+drwxr-xr-x 1 i 197121 0 Dec 23 12:18 ./
+drwxr-xr-x 1 i 197121 0 Dec 23 12:15 ../
+drwxr-xr-x 1 i 197121 0 Dec 23 12:18 GitStudy/
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial
+$ cd GitStudy/
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial/GitStudy (main)
+$ ls -al
+total 5
+drwxr-xr-x 1 i 197121  0 Dec 23 12:18 ./
+drwxr-xr-x 1 i 197121  0 Dec 23 12:18 ../
+drwxr-xr-x 1 i 197121  0 Dec 23 12:18 .git/
+-rw-r--r-- 1 i 197121 40 Dec 23 12:18 README.md
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial/GitStudy (main)
+$
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial
+$ git clone https://github.com/gumibigd/Educational-Materials.git
+Cloning into 'Educational-Materials'...
+remote: Enumerating objects: 148, done.
+remote: Counting objects: 100% (148/148), done.
+remote: Compressing objects: 100% (126/126), done.
+remote: Total 794 (delta 82), reused 33 (delta 20), pack-reused 646
+Receiving objects: 100% (794/794), 249.57 MiB | 777.00 KiB/s, done.
+Resolving deltas: 100% (405/405), done.
+Updating files: 100% (181/181), done.
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial
+$ ls
+Educational-Materials/  GitStudy/
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial
+$ cd Educational-Materials/
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial/Educational-Materials (master)
+$ ls
+'Chap14(추상클래스와인터페이스).zip'   README.md                WebContent/
+ READ.md                              'RLab_Chap06(DoIt).zip'  '붗꽃 종류.png'
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial/Educational-Materials (master)
+$ cd WebContent/
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial/Educational-Materials/WebContent (master)
+$ ls
+ HTML5+CSS3/   Java/   META-INF/   MySQL/   R/  'SB (Story Board)'/   Utility/   WEB-INF/
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial/Educational-Materials/WebContent (master)
+$ cd MySQL/
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial/Educational-Materials/WebContent/MySQL (master)
+$ ls
+ employees.zip  '제1장m.DBMS의 개요, MySQL설치.pdf'  '제2장m.SQL기초-1-1 - 배포본.pdf'
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial/Educational-Materials/WebContent/MySQL (master)
+$ cd ..
+
+i@DESKTOP-1N8I20E MINGW64 /c/users/i/GitHub_tutorial/Educational-Materials/WebContent (master)
+$ cd
+
+i@DESKTOP-1N8I20E MINGW64 ~
+$ pwd
+/c/Users/i
+
+i@DESKTOP-1N8I20E MINGW64 ~
+$ cd GitHub_tutorial/
+
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial
+$ ls
+Educational-Materials/  GitStudy/
+
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial
+$ git clone
+
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial/SecondProject
+$ git init
+Initialized empty Git repository in C:/Users/i/GitHub_tutorial/SecondProject/.git/
+
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial/SecondProject (master)
+$ ls -al
+total 13
+drwxr-xr-x 1 i 197121  0 Dec 31 12:29 ./
+drwxr-xr-x 1 i 197121  0 Dec 31 12:24 ../
+drwxr-xr-x 1 i 197121  0 Dec 31 12:29 .git/
+-rw-r--r-- 1 i 197121 67 Dec 31 12:28 TeamProject.txt
+
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial/SecondProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TeamProject.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial/SecondProject (master)
+$ git add TeamProject.txt
+warning: LF will be replaced by CRLF in TeamProject.txt.
+The file will have its original line endings in your working directory
+
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial/SecondProject (master)
+$
+$ git add TeamProject.txt
+warning: LF will be replaced by CRLF in TeamProject.txt.
+The file will have its original line endings in your working directory
+
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial/SecondProject (master)
+$
+
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial/SecondProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   TeamProject.txt
+
+
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial/SecondProject (master)
+$ git commit -m "create txt file"
+[master (root-commit) 9472950] create txt file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 TeamProject.txt
+
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial/SecondProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial/SecondProject (master)
+$
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial/SecondProject (master)
+$ git remote add origin https://github.com/aone1234/SecondProject.git
+
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial/SecondProject (master)
+$ git remote -v
+origin  https://github.com/aone1234/SecondProject.git (fetch)
+origin  https://github.com/aone1234/SecondProject.git (push)
+
+i@DESKTOP-1N8I20E MINGW64 ~/GitHub_tutorial/SecondProject (master)
+$ git push -u origin master
+
+

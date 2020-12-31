@@ -1,0 +1,34 @@
+git status
+pwd
+ls
+git branch
+git checkout ma
+ls -al
+clear
+
+mkdir git_tutotial
+cd git_tutotial
+
+vim Hello.java
+cat Hello.java
+
+git config --global user.name hmh1181
+git config --global user.email hmh1181@gmail.com
+
+git config --list
+git init
+clear
+git status
+git add Hello.java
+git status
+
+git commit -m "create Hello.java"
+git checkout gumi2
+pwd
+ls
+vim { i->작성->esc->wq->enter }
+javac Hell.java
+java Hello
+
+
+

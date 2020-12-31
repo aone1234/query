@@ -1,0 +1,7 @@
+https://tomcat.apache.org/download-80.cgi      // 톰캣
+
+https://www.mozilla.org/ko/firefox/download/thanks/    // 파이어폭스
+
+https://www.eclipse.org/downloads/packages/       // 이클립스
+
+https://rstudio.com/products/rstudio/download/     // R
